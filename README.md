@@ -28,11 +28,12 @@ pip install -r requirements.txt
 ```
 if you encounter problems with installing [mmsegmentation](https://github.com/open-mmlab/mmsegmentation), [MinkowskiEngine](https://github.com/NVIDIA/MinkowskiEngine), [faiss](https://github.com/facebookresearch/faiss), [open3d](https://github.com/isl-org/Open3D), [vision3d](https://github.com/qinzheng93/vision3d), etc., please refer to the official websites for help.
 
-## 3) Download Datasets
-### 1、KITTI Odomety dataset
+### 2、Download Datasets
+#### KITTI Odomety dataset
 You should firstly login the [KITTI official website](https://www.cvlibs.net/datasets/kitti/index.php) and then download the odometry dataset. Download the "color", "velodyne laser data", "calibration files" and "ground truth poses" .zip files. Unzip them into a folder structure according to the official guide.
 
-### 2、SemanticKITTI dataset
+#### SemanticKITTI dataset
 Then you need to download the SemanticKITTI label data from the [official website](https://semantic-kitti.org/dataset.html), which will be used as the ground truth for training model on 11~21 sequences.
 
-### 3、Boreas dataset
+#### Boreas dataset
+Additionally, if you want to run the model on the Boreas dataset, you can download it from the [official website](https://www.boreas.utias.utoronto.ca/#/). The demanding sequences are in the datasets/Boreas_dp/mv_boreas_minuse.py and only the LiDAR and the Camera sensor data are required.
