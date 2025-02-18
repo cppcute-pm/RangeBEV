@@ -252,7 +252,7 @@ class Visualizer2(object):
         mesh_frame = geometry.TriangleMesh.create_coordinate_frame(
             size=1, origin=[0, 0, 0])  # create coordinate frame/system
         self.o3d_visualizer.add_geometry(mesh_frame)
-    def draw_points(self, points, points_size=2, point_color=[0.5, 0.5, 0.5], mode='xyz', offset):
+    def draw_points(self, points, points_size=2, point_color=[0.5, 0.5, 0.5], mode='xyz', offset=0):
         points = copy.deepcopy(points)
         points[:, 0] += offset
         self.pcd, self.points_colors = _draw_points(

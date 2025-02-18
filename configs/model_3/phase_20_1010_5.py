@@ -53,11 +53,6 @@ model_cfgs=dict(
             p=3,
             eps=1e-6,
             ),
-        phase20_SA_block_aggregator_type='GeM',
-        phase20_SA_block_aggregator_cfgs=dict(
-            p=3,
-            eps=1e-6,
-            ),
     ),
 )
 
