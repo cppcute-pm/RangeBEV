@@ -1,0 +1,16 @@
+loss_cfgs=dict(
+    loss_type='G1M_triplet_cmpm',
+    triplet_loss_cfgs=dict(
+        pair_dist_info=True,
+        hard_mining=True,
+        margin=0.2,
+        normalize_embeddings=False,
+    ),
+    cmpm_loss_cfgs=dict(
+        avg_sim_info=True,
+        epsilon=1e-6,
+        SDM_logit_scale=50,
+    ),
+    triplet_loss_weight=0.5,
+    cmpm_loss_weight=0.5,
+)

@@ -1,0 +1,16 @@
+__pycache__/
+
+build/
+dist/
+*.egg-info/
+
+*.log
+tmp/
+
+wandb/
+
+venv/
+env/
+
+*.h5
+*.ckpt

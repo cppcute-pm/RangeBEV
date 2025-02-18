@@ -1,0 +1,9 @@
+loss_cfgs=dict(
+    loss_type='v2_triplet',
+    base_margin=0.6,
+    normalize_embeddings=False,
+    positive_overlap_ratio=0.2,
+    negative_overlap_ratio=0.01,
+    delta_overlap_ratio=0.01,
+    tuple_formtype='relative_delta',
+)

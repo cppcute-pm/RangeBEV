@@ -1,0 +1,20 @@
+loss_cfgs=dict(
+    loss_type='GL_v2_triplet_circle',
+    global_loss_cfgs=dict(
+        base_margin=0.6,
+        normalize_embeddings=False,
+        positive_overlap_ratio=0.2,
+        negative_overlap_ratio=0.05,
+        delta_overlap_ratio=0.01,
+        tuple_formtype='relative_delta',
+        choose_nonzero=False
+    ),
+    local_loss_cfgs=dict(
+        m=0.4,
+        gamma=80,
+    ),
+    global_loss_weight=0.5,
+    local_loss_weight=0.5,
+    local_positive_mask_margin=0.2,
+    local_negative_mask_margin=0.01,
+)

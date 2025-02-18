@@ -1,0 +1,14 @@
+loss_cfgs=dict(
+    loss_type='GL_triplet_circle',
+    global_loss_cfgs=dict(
+        pair_dist_info=True,
+        hard_mining=True,
+        margin=0.2,
+        normalize_embeddings=False,
+    ),
+    local_loss_cfgs=dict(
+        sinkhorn_iters=100,
+    ),
+    global_loss_weight=0.5,
+    local_loss_weight=0.5,
+)

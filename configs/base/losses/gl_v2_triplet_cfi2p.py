@@ -1,0 +1,17 @@
+loss_cfgs=dict(
+    loss_type='GL_v2_triplet_cfi2p',
+    global_loss_cfgs=dict(
+        base_margin=0.6,
+        normalize_embeddings=False,
+        positive_overlap_ratio=0.2,
+        negative_overlap_ratio=0.05,
+        delta_overlap_ratio=0.01,
+        tuple_formtype='relative_delta',
+        choose_nonzero=True,
+    ),
+    local_loss_cfgs=dict(
+        sinkhorn_iters=100,
+    ),
+    global_loss_weight=0.5,
+    local_loss_weight=0.5,
+)
