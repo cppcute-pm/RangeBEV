@@ -69,19 +69,19 @@ cd ../../../Depth-Anything/metric_depth
 python generate_bev_v2_sobel.py
 ```
 
-## Training
+## 3) Training
 assign the `script.sh` correctly, you should set the `data_path`, `weight_path`, `config_path`, `need_eval`, `seed`, `local_rank` parameters, `seed` is fixed to 3407, `config_path` is `configs/model_5/phase_5_standard.py`. Then run the following command to train the model.
 ```bash
 bash script.sh
 ```
 
-## Inference
+## 4) Inference
 you can train from scratch with your own model weights or just use our [pretrained model weights](https://pan.baidu.com/s/1i4X6gddc5PG7mleV0znl5w?pwd=6emw), run the following command to evaluate the model.
 ```bash
 python Kitti_evaluate.py
 ```
 
-## Citation
+## 5) Citation
 If you find this work useful in your research, please consider citing:
 ```bibtex
 @misc{peng2025rangebirdseyeview,
