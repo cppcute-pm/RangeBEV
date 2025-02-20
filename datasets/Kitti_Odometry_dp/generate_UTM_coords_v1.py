@@ -20,7 +20,7 @@ tool_path = os.path.join(data_root, 'KITTI', 'my_tool')
 sequence_list = ['11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21']
 pc_inuse_root = os.path.join(data_root, 'KITTI/16384_to_4096_cliped_fov')
 
-the_radio = 15.0 # the radio of the sector
+the_radio = 10.0 # the radio of the sector
 the_angle = 90.0 / 180.0 * np.pi # the total angle of the sector, and the 81.0 is the HFoV of the camera
 the_radio_split = 16
 the_base_angel_points_num = 2
